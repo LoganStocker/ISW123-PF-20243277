@@ -39,3 +39,7 @@ Se redacto el planteamiento del problema en el README: la empresa dominicana de 
 ## 22/11/2026 04:45 PM
 
 Se creo la interfaz IReservable en la capa Datos, con el metodo PuedeReservarse, y la clase abstracta Vehiculo la implementa: un vehiculo puede reservarse solo si esta activo y su estado es Disponible.
+
+## 22/11/2026 05:01 PM
+
+Se creo el record Deposito en la capa Datos, con el id del deposito, el id de la reserva, el monto, la fecha del deposito y el monto devuelto, que puede estar vacio hasta que se devuelva el vehiculo. Se uso un record porque un deposito solo guarda datos y no cambia despues de crearse. Un record es inmutable y compara por sus valores, y tiene menos codigo que una clase. No lleva validaciones porque se haran en la capa Negocio.
