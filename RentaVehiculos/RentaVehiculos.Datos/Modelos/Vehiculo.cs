@@ -1,6 +1,6 @@
 namespace RentaVehiculos.Datos.Modelos;
 
-public abstract class Vehiculo
+public abstract class Vehiculo : IReservable
 {
     private string _placa = "";
     private decimal _precioPorDia;
@@ -35,6 +35,11 @@ public abstract class Vehiculo
     public EstadoVehiculo Estado { get; set; } = EstadoVehiculo.Disponible;
 
     public bool Activo { get; set; } = true;
+
+    public bool PuedeReservarse()
+    {
+        return Activo && Estado == EstadoVehiculo.Disponible;
+    }
 
     public abstract string Descripcion();
 }
