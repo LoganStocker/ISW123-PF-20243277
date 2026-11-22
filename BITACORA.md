@@ -35,3 +35,7 @@ Se crearon las clases Cliente, con validacion de la cedula (11 digitos) y de la 
 ## 22/11/2026 04:29 PM
 
 Se redacto el planteamiento del problema en el README: la empresa dominicana de renta de vehiculos que hoy lleva su flota y sus reservas en cuaderno o en Excel, los errores que eso causa y como el sistema los evita.
+
+## 22/11/2026 04:45 PM
+
+Se creo la interfaz IReservable en la capa Datos, con el metodo PuedeReservarse, y la clase abstracta Vehiculo la implementa: un vehiculo puede reservarse solo si esta activo y su estado es Disponible.
