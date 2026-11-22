@@ -31,3 +31,7 @@ Se crearon las clases de los vehiculos: la clase abstracta Vehiculo, con propied
 ## 22/11/2026 04:21 PM
 
 Se crearon las clases Cliente, con validacion de la cedula (11 digitos) y de la licencia (una letra y 9 digitos), y Reserva, que valida los dias de 1 a 30 y se ordena por fecha de inicio con IComparable.
+
+## 22/11/2026 04:29 PM
+
+Se redacto el planteamiento del problema en el README: la empresa dominicana de renta de vehiculos que hoy lleva su flota y sus reservas en cuaderno o en Excel, los errores que eso causa y como el sistema los evita.
