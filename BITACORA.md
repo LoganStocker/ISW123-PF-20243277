@@ -43,3 +43,7 @@ Se creo la interfaz IReservable en la capa Datos, con el metodo PuedeReservarse,
 ## 22/11/2026 05:01 PM
 
 Se creo el record Deposito en la capa Datos, con el id del deposito, el id de la reserva, el monto, la fecha del deposito y el monto devuelto, que puede estar vacio hasta que se devuelva el vehiculo. Se uso un record porque un deposito solo guarda datos y no cambia despues de crearse. Un record es inmutable y compara por sus valores, y tiene menos codigo que una clase. No lleva validaciones porque se haran en la capa Negocio.
+
+## 22/11/2026 06:05 PM
+
+Se crearon el enum ConceptoPago, con los conceptos Alquiler y Recargo, y la clase Pago en la capa Datos. La clase Pago valida que el monto sea mayor que 0 y lanza una excepcion si no lo es.
