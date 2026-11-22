@@ -7,6 +7,7 @@ public abstract class Vehiculo : IReservable
 
     public int IdVehiculo { get; set; }
 
+    [ColumnaAtributo("Placa", 1)]
     public string Placa
     {
         get => _placa;
@@ -18,9 +19,12 @@ public abstract class Vehiculo : IReservable
         }
     }
 
+    [ColumnaAtributo("Marca", 2)]
     public string Marca { get; set; } = "";
+    [ColumnaAtributo("Modelo", 3)]
     public string Modelo { get; set; } = "";
 
+    [ColumnaAtributo("Precio por dia", 4)]
     public decimal PrecioPorDia
     {
         get => _precioPorDia;
@@ -32,6 +36,7 @@ public abstract class Vehiculo : IReservable
         }
     }
 
+    [ColumnaAtributo("Estado", 5)]
     public EstadoVehiculo Estado { get; set; } = EstadoVehiculo.Disponible;
 
     public bool Activo { get; set; } = true;
