@@ -55,3 +55,7 @@ Se creo el atributo propio ColumnaAtributo en la capa Datos, con un titulo y un 
 ## 22/11/2026 06:42 PM
 
 Se creo la clase Flota en la capa Datos, que implementa IEnumerable de Vehiculo para poder recorrer los vehiculos con foreach. Tiene un metodo Agregar que no acepta vehiculos nulos.
+
+## 22/11/2026 06:47 PM
+
+Se agrego el paquete Microsoft.Data.SqlClient a la capa Datos y se creo la clase ConexionBD en la carpeta ConexionesCambiosDB, con la cadena de conexion a RentaVehiculosDB.
