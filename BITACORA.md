@@ -19,3 +19,15 @@ Se revisaron las validaciones del sistema: se definio que excepcion se lanza en 
 ## 22/11/2026 03:16 PM
 
 Se ajustaron las validaciones: la cedula debe tener 11 digitos y la licencia una letra seguida de 9 digitos. Se agrego la eliminacion de vehiculos sin perder el historial, porque el vehiculo queda inactivo, y el registro de los dias de retraso en cada devolucion tardia.
+
+## 22/11/2026 04:22 PM
+
+Se creo la capa Datos (solucion RentaVehiculos.Datos) con la carpeta Modelos: el enum EstadoVehiculo con los estados Disponible, Rentado y Mantenimiento, el enum EstadoReserva con Activa, Devuelta y Cancelada, y la excepcion propia ReglaNegocioException, que guarda el numero de la regla de negocio que se rompio.
+
+## 22/11/2026 04:22 PM
+
+Se crearon las clases de los vehiculos: la clase abstracta Vehiculo, con propiedades validadas para la placa y el precio por dia, y sus dos clases hijas AutoDeportivo (con caballos de fuerza) y Jeepeta (con 4x4), cada una con su propia descripcion.
+
+## 22/11/2026 04:22 PM
+
+Se crearon las clases Cliente, con validacion de la cedula (11 digitos) y de la licencia (una letra y 9 digitos), y Reserva, que valida los dias de 1 a 30 y se ordena por fecha de inicio con IComparable.
