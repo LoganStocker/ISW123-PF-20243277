@@ -2,6 +2,12 @@
 
 ## Que problema resuelve
 
+RentaVehiculos es un sistema para una empresa dominicana de renta de vehiculos que hoy lleva su flota y sus reservas en cuaderno o en Excel. Con ese metodo no se sabe con certeza que vehiculo esta disponible, se puede rentar el mismo vehiculo a dos clientes y los dias, el total y los recargos se calculan a mano, con errores.
+
+El sistema lleva la flota (autos deportivos y jeepetas) con su estado, registra las reservas con un maximo de 30 dias y calcula solo el total y el deposito del 40 por ciento. Al devolver el vehiculo registra la fecha real, calcula el recargo por cada dia de retraso y devuelve el deposito menos ese recargo.
+
+Dentro de esa misma idea, el sistema tambien evita otros dos problemas: el dinero que no cuadra, porque cada deposito y cada pago queda registrado, y el alquiler a clientes con la cedula o la licencia vencida o mal anotada, porque esos datos se validan antes de guardarlos.
+
 ## Reglas de negocio
 
 1. La reserva dura minimo 1 dia y maximo 30, y empieza en la fecha actual. No se aceptan fechas de inicio pasadas ni futuras. Fuera de ese rango no se guarda.
