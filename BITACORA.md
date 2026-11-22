@@ -47,3 +47,7 @@ Se creo el record Deposito en la capa Datos, con el id del deposito, el id de la
 ## 22/11/2026 06:05 PM
 
 Se crearon el enum ConceptoPago, con los conceptos Alquiler y Recargo, y la clase Pago en la capa Datos. La clase Pago valida que el monto sea mayor que 0 y lanza una excepcion si no lo es.
+
+## 22/11/2026 06:23 PM
+
+Se creo el atributo propio ColumnaAtributo en la capa Datos, con un titulo y un orden, y se aplico a las propiedades Placa, Marca, Modelo, PrecioPorDia y Estado de Vehiculo. Se hizo para leer esos datos con reflection mas adelante y armar los reportes sin escribir las columnas a mano.
